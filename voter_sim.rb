@@ -95,7 +95,7 @@ class World
 
   def create
     puts "Would you like to create a
-(P)olitician or (V)oter?"
+(P)olitician or a (V)oter?"
     @create_input = gets.downcase.chomp
     if @create_input == "p"
       create_politician
@@ -108,7 +108,7 @@ class World
   end
 
   def create_politician
-    puts "Insert name: "
+    p "Politician's name: "
     name = gets.chomp
     puts "Insert new Party: (D)emocrat or (R)epublican?"
     party = gets.downcase.chomp

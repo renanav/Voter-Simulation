@@ -1,53 +1,37 @@
-# Voter-Simulation
-Voter Simulation Project, a REPL-driven voting simulation program.
+#Voter Simulation Project:  a REPL-driven voting simulation program
 
-Overview(Please submit gist link by 10 am Monday)
-You are going to build a program that allows a user to create a directory of politicians and voters. Users will be able to Create, List, Update and Delete both voters and politicians from the directory.
+This is a program that allows a user to create a directory of politicians and voters. Users will be able to Create, List, Update and Delete both voters and politicians from the directory.
 
 This is a common set of behaviour, and collectively are refered to as CRUD actions.
 
-Voters and Politicians are both People with names. Voters however, have a political affliliation of either Liberal, Conservative, Tea Party, Socialist, or Neutral, while politicians have a party affiliation either Democrat or Republican.
+Voters and Politicians are both People with names. Voters however, have a *political affliliation* of either Liberal, Conservative, Tea Party, Socialist, or Neutral, while politicians have a *party affiliation* either Democrat or Republican.
 
-Once the program starts, you should be greated with a “main menu” that allows you to perform all the CRUD actions on either voter or politicians: (C )reate, (L)ist, (U)pdate, (D)elete.
+Once the program starts, you will be greeted with a “main menu” that allows you to perform all the CRUD actions on either voter or politicians: (C )reate, (L)ist, (U)pdate, (D)elete.
+The game will go back to the beggining when an action is completed.
 
-This is a large project, but it would be significantly more complex to solve without OOP. This is a great opportunity to recognize the value OOP.
 
-Tip! Tests and TDD may help you manage the complexity of this large project.
+##Outline
+The game begins with a welcome message followed by a series of questions:
 
-Important! Read through this entire document! Especially take advantage of the Getting Started section after the project description.
+* The user's name (with audio)
+* What would you like to do?
+(C)reate, (L)ist, (U)pdate,  (D)elete, or (E)xit
 
-Outline
-Your game should begin with a welcome message followed by a series of questions. The following examples are just suggestions. Rewrite these questions however you’d like. Just be sure to maintain the same outline.
+* When type C:
 
-Main Menu
-What would you like to do?
-(C)reate, (L)ist, (U)pdate, or (D)elete
-Create
-When I type C:
+A user can create a (P)olitician or a (V)oter.
+When choosing to create a politician: 	
+* He is givan a name
+* He is given a party
+* Politician is created
 
-What would you like to create?
-(P)olitician or (V)oter
-Create Politician
-When I type P:
-
-Name?
-Allow the user to input any name.
-
-Party?
-(D)emocrat or (R)epublican
-Then create a Politician with the collected data.
-
-Create Voter
-If instead I type V:
-
-Name?
-Allow the user to input any name.
-
-Politics?
-(L)iberal, (C)onservative, (T)ea Party, (S)ocialist, or (N)eutral
+When choosing to create a voter:
+* He is given a name
+* He is given a party affiliation: (L)iberal, (C)onservative, (T)ea Party, (S)ocialist, or (N)eutral
+* Voter is created
+(S)ocialist, or (N)eutral
 Then create a Voter with the collected input.
 
-Return to the main menu when you’re done.
 
 Tip! When asking a user for input, use abbreviated shortcuts when possible and if they make sense. Here, for example, we suggest allowing users to enter C instead of typing out Create. Not only does it reduce the likelihood of mistakes, but it also makes the simulation faster, both for your users and for your own testing.
 
