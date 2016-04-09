@@ -56,6 +56,12 @@ class World
 
   def main_menu
     print `say Hello voter, welcome to the simulation`
+    sleep(1)
+    print `say what is your name?`
+    print "My name is: "
+    you = gets.chomp
+    puts `say hello#{you}. lets start`
+    sleep(1)
     puts "What would you like to do?
 (C)reate, (L)ist, (U)pdate, (D)elete, or (E)xit"
     @action = gets.downcase.chomp
