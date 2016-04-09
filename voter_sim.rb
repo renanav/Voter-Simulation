@@ -55,6 +55,7 @@ class World
   end
 
   def main_menu
+    print `say Hello voter, welcome to the simulation`
     puts "What would you like to do?
 (C)reate, (L)ist, (U)pdate, (D)elete, or (E)xit"
     @action = gets.downcase.chomp
