@@ -62,6 +62,7 @@ class World
     you = gets.chomp
     puts `say hello#{you}. lets start`
     sleep(1)
+    puts `say What would you like to do?. press c to create. press l to view the list of all of the voters and politicians. Press u to update. press d to delete. or press e to exit`
     puts "What would you like to do?
 (C)reate, (L)ist, (U)pdate, (D)elete, or (E)xit"
     @action = gets.downcase.chomp
